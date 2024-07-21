@@ -1,18 +1,17 @@
-import css from './Profile.modus.css'
-
+import styled from '../Profile/Profile.modus.css';
 const Profile = ({ name, tag, location, image, stats }) => {
       
 	return (
     <>
-        <div className={css.profile}>
+        <div className={styled.profile}>
             <img
                 src={image}
                 alt={name} />
-            <p className={css.profileText}> {name}</p>
-            <p className={css.profileText}> {tag}</p>
-            <p className={css.profileText}> {location} </p>
+            <p className={styled.profileText}> {name}</p>
+            <p className={styled.profileText}> {tag}</p>
+            <p className={styled.profileText}> {location} </p>
         </div>
-            <ul className={stats}>
+            <ul className={styled.stats}> {stats}
                 <li>
                     <span>Followers</span> <br />
                     <span>1000</span>
