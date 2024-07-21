@@ -1,0 +1,28 @@
+.friendListItem {
+  padding: 15px 0;
+  flex-basis: calc((100% - 80px) / 5);
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid rgb(131, 131, 131);
+  border-radius: 9px;
+  box-shadow: 13px 11px 48px -3px rgba(122, 122, 122, 1);
+}
+.friendListItem:hover .friendAvatar {
+  transform: scale(1.2);
+}
+.friendName {
+  font-size: 20px;
+  font-weight: 600;
+}
+.friendStatus {
+  font-size: 18px;
+}
+.online {
+  color: rgb(99, 192, 99);
+}
+.offline {
+  color: rgb(233, 87, 87);
+}
