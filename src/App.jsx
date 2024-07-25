@@ -5,10 +5,14 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 import userData from "./db/userData.json";
 import friends from "./db/friends.json";
 import transactions from "./db/transactions.json";
+import ProfileModal from "./components/ProfileModal/ProfileModal";
 
  const App = () => {
   return (
     <>
+       <div className="App">
+         <ProfileModal/>
+       </div>
       <Profile
        name={userData.username}
        tag={userData.tag}
@@ -22,7 +26,6 @@ import transactions from "./db/transactions.json";
       <>
       <TransactionHistory transactions={transactions}/> 
       </>
-  
       </>
       
   );
